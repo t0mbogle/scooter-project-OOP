@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="Rw-qWjPpmH_sI9pseLSh" name="Page-1">
-        <mxGraphModel dx="290" dy="500" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="290" dy="527" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -34,34 +34,34 @@
                     <mxGeometry y="230" width="140" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="46" value="Scooter App" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="280" y="180" width="180" height="280" as="geometry"/>
+                    <mxGeometry x="260" y="180" width="200" height="280" as="geometry"/>
                 </mxCell>
                 <mxCell id="47" value="login(password) -&amp;gt; from User" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="46">
-                    <mxGeometry y="30" width="180" height="30" as="geometry"/>
+                    <mxGeometry y="30" width="200" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="48" value="logout() -&amp;gt; from User" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="46">
-                    <mxGeometry y="60" width="180" height="30" as="geometry"/>
+                    <mxGeometry y="60" width="200" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="50" value="" style="line;strokeWidth=2;html=1;" vertex="1" parent="46">
-                    <mxGeometry y="90" width="180" height="10" as="geometry"/>
+                    <mxGeometry y="90" width="200" height="10" as="geometry"/>
                 </mxCell>
                 <mxCell id="49" value="&lt;u&gt;Methods:&lt;/u&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="46">
-                    <mxGeometry y="100" width="180" height="30" as="geometry"/>
+                    <mxGeometry y="100" width="200" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="51" value="requestUser()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="46">
-                    <mxGeometry y="130" width="180" height="30" as="geometry"/>
+                <mxCell id="51" value="requestUser(username, pw, age)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="46">
+                    <mxGeometry y="130" width="200" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="52" value="dockScooter()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="46">
-                    <mxGeometry y="160" width="180" height="30" as="geometry"/>
+                <mxCell id="52" value="dockScooter(scooter, station)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="46">
+                    <mxGeometry y="160" width="200" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="53" value="createScooter()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="46">
-                    <mxGeometry y="190" width="180" height="30" as="geometry"/>
+                <mxCell id="53" value="createScooter(station)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="46">
+                    <mxGeometry y="190" width="200" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="54" value="rentScooter()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="46">
-                    <mxGeometry y="220" width="180" height="30" as="geometry"/>
+                <mxCell id="54" value="rentScooter(scooter, user)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="46">
+                    <mxGeometry y="220" width="200" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="55" value="print()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="46">
-                    <mxGeometry y="250" width="180" height="30" as="geometry"/>
+                    <mxGeometry y="250" width="200" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="56" value="Scooter" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
                     <mxGeometry x="540" y="180" width="180" height="210" as="geometry"/>
