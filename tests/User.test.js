@@ -26,10 +26,12 @@ describe('Test suite for User class', () => {
         expect(user1.loggedIn).toBe(false);
         expect(user1.loggedIn).not.toBe(true);
     })
-})
-
-// User tests here
-
-// test login
-
-// test logout
+    xtest('Checks whether login() sets loggedIn to true', () => {
+        // login in and check loggedIn is true
+    })
+    xtest('Checks whether logout() sets loggedIn to false', () => {
+        // login in and check loggedIn is true
+        // logout and check loggedIn is false
+    })
+   
+});
