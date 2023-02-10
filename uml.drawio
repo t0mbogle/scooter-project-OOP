@@ -1,9 +1,17 @@
 <mxfile host="65bd71144e">
     <diagram id="2wjYIa9l68RJOtHkyrHY" name="Page-1">
-        <mxGraphModel dx="1066" dy="533" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="896" dy="558" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
+                <mxCell id="28" style="edgeStyle=none;html=1;exitX=0.9;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="230" y="250" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="31" style="edgeStyle=none;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=-0.016;entryY=0.022;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="2" target="19">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
                 <mxCell id="2" value="" style="shape=actor;whiteSpace=wrap;html=1;" vertex="1" parent="1">
                     <mxGeometry x="40" y="240" width="40" height="60" as="geometry"/>
                 </mxCell>
@@ -11,7 +19,7 @@
                     <mxGeometry x="35" y="210" width="50" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="4" value="Scooter" style="swimlane;" vertex="1" parent="1">
-                    <mxGeometry x="490" y="107.5" width="290" height="405" as="geometry"/>
+                    <mxGeometry x="520" y="130" width="290" height="405" as="geometry"/>
                 </mxCell>
                 <mxCell id="10" value="user: null if not assigned" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="4">
                     <mxGeometry x="70" y="55" width="150" height="30" as="geometry"/>
@@ -32,7 +40,7 @@
                     <mxGeometry x="90" y="145" width="110" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="25" value="All scooters are docked, fully charged and &lt;br&gt;in good condition initially. Station is the only&amp;nbsp;&lt;br&gt;constructor parameter in the Scooter object." style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="4">
-                    <mxGeometry x="10" y="217.5" width="260" height="60" as="geometry"/>
+                    <mxGeometry x="15" y="282.5" width="260" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="5" value="Username: String" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
                     <mxGeometry y="310" width="120" height="30" as="geometry"/>
@@ -46,29 +54,40 @@
                 <mxCell id="8" value="loggedIn: Boolean" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
                     <mxGeometry y="370" width="120" height="30" as="geometry"/>
                 </mxCell>
+                <mxCell id="30" style="edgeStyle=none;html=1;exitX=1.033;exitY=0.589;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="23">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="570" y="260" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
                 <mxCell id="16" value="Scooter App" style="swimlane;" vertex="1" parent="1">
-                    <mxGeometry x="190" y="195" width="200" height="230" as="geometry"/>
+                    <mxGeometry x="190" y="195" width="200" height="275" as="geometry"/>
                 </mxCell>
                 <mxCell id="17" value="login(password)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="16">
-                    <mxGeometry x="45" y="25" width="110" height="30" as="geometry"/>
+                    <mxGeometry x="45" y="39" width="110" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="18" value="logout()" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="16">
-                    <mxGeometry x="70" y="45" width="60" height="30" as="geometry"/>
+                    <mxGeometry x="70" y="59" width="60" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="20" value="dockScooter(scooter, station)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="16">
-                    <mxGeometry x="10" y="85" width="180" height="30" as="geometry"/>
+                    <mxGeometry x="10" y="152" width="180" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="19" value="requestUser(u, pw, age)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="16">
-                    <mxGeometry x="25" y="65" width="150" height="30" as="geometry"/>
+                    <mxGeometry x="25" y="131" width="150" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="23" value="print()" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="16">
-                    <mxGeometry x="75" y="170" width="50" height="30" as="geometry"/>
+                    <mxGeometry x="75" y="227" width="50" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="22" value="createScooter(station)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="16">
-                    <mxGeometry x="30" y="110" width="140" height="30" as="geometry"/>
+                    <mxGeometry x="30" y="177" width="140" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="24" value="rentScooter(scooter, user)" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="16">
-                    <mxGeometry x="20" y="140" width="160" height="30" as="geometry"/>
+                    <mxGeometry x="20" y="202" width="160" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="&lt;u&gt;User actions&lt;/u&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="16">
+                    <mxGeometry x="54" y="20" width="90" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="&lt;u&gt;Other App methods&lt;/u&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="226" y="306" width="130" height="30" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
