@@ -1,5 +1,12 @@
 class Scooter{
-  // scooter code here
+
+  constructor(stations) {
+    this.stations = ['Deansgate', 'Salford', 'Didsbury'];
+    this.user = user;
+  }
+  rent(scooter, user) {
+    this.user = user;
+  }
 }
 
 
