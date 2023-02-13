@@ -7,7 +7,6 @@ describe('scooter object', () => {
 
   beforeEach(() => {
     scooter1 = {
-      station: ['Deansgate', 'Salford', 'Didsbury'],
       user: null,
       charge: 100,
       broken: false
@@ -20,29 +19,32 @@ describe('scooter object', () => {
   test('Checks if user is initially set to null', () => {
     expect(scooter1.user).toBe(null);
   })
-  test('Checks if scooter has initial stations', () => {
-    expect(scooter1.station).not.toBe(null);
-    expect(scooter1.station[0]).toBe('Deansgate');
-  })
-  test('Checks if scooter stations array has expected length', () => {
-    expect(scooter1.station).toHaveLength(3);
-  })
   test('Checks charge is initially set to 100%', () => {
     expect(scooter1.charge).toBe(100);
+    expect(typeof scooter1.charge).toBe('number');
   })
   test('Checks scooter is not broken initially', () => {
     expect(scooter1.broken).toBe(false);
     expect(scooter1.broken).not.toBe(true);
   })
+
+  test('Checks serial and nextSerial are numbers', () => {
+    let newScooter = new Scooter();
+    expect(newScooter.serial).toBe(0);
+    expect(newScooter.nextSerial).toBe(1);
+    expect(newScooter.serial + 1 === newScooter.nextSerial).toBe(true); 
+    // serial is 1 behind nextSerial
+  })
+
 })
 
 //Method tests
 describe('scooter methods', () => {
-  // tests here!
+  // tests here!     * The below methods are part of the ScooterApp?? *
 
   //rent method
-  test('Checks that scooter has a rent method', () => {
-    let scooter1 = new Scooter('Deansgate')
+  xtest('Checks that scooter has a rent method', () => {
+    let scooter1 = new Scooter()
     expect(scooter1.rent()).toBeInstanceOf(Function);
   })
 

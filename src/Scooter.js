@@ -1,11 +1,12 @@
 class Scooter{
 
-  constructor(stations) {
-    this.stations = ['Deansgate', 'Salford', 'Didsbury'];
-    this.user = user;
-  }
-  rent(scooter, user) {
-    this.user = user;
+  constructor(station) {
+    this.station = station;
+    this.user = null;
+    this.serial = 0;
+    this.nextSerial = 1;
+    this.charge = 100;
+    this.broken = false;
   }
 }
 
