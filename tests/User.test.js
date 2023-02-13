@@ -10,9 +10,6 @@ describe('Test suite for User class', () => {
             password: "password123",
             age: 30,
             loggedIn: false,
-            login(password) {
-
-            }
         };
       });
 
@@ -28,29 +25,25 @@ describe('Test suite for User class', () => {
     test('Checks whether loggedIn is initially set to false', () => {
         expect(user1.loggedIn).toBe(false);
         expect(user1.loggedIn).not.toBe(true);
-
-
-
+    })
+    test('Checks if error is thrown when given an incorrect password', () => {
         let user = new User('tom', 'myAwesomePassword', 20);
         expect(user.loggedIn).toBe(false);
         // incorrect - expect an exception to be thrown and caught
         expect(() => user.login('foobar')).toThrow(Error);
-        
-        user.login('myAwesomePassword');
-        expect(user.loggedIn).toBe(true);
-
-        let userFoo = new User('tom', '1234', 20);
-        userFoo.login('1234');
-        expect(userFoo.loggedIn).toBe(true);
-
-
     })
-    xtest('Checks whether login() sets loggedIn to true', () => {
-        // login in and check loggedIn is true
+    test('Checks if login() with correct password logs in the user', () => {
+        let user2 = new User('tom', 'myAwesomePassword', 20);
+        user2.login('myAwesomePassword');
+        expect(user2.loggedIn).toBe(true);
     })
-    xtest('Checks whether logout() sets loggedIn to false', () => {
-        // login in and check loggedIn is true
-        // logout and check loggedIn is false
+    test('Checks whether logout() sets loggedIn to false', () => {
+        let pedro = new User('Pedro', 'pedro1234', 50);
+
+        pedro.login('pedro1234');
+        expect(pedro.loggedIn).toBe(true);
+        pedro.logout();
+        expect(pedro.loggedIn).toBe(false);
     })
    
 });
